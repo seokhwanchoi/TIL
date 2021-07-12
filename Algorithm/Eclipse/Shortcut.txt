@@ -1,0 +1,12 @@
+ctrl shift o : java eclipse 빨간 줄 알아서 채워주는 것
+
+ctrl shift f: 코드 자동 정리
+
+alt shift r : 전체 변수명 한꺼번에 바꿔주는 것
+
+F3 : 클래스에 마우스 갖다대고 f3누르면 api소스 볼수있다. 
+
+-- 연결안되어있으면 attach source -> external location 
+- >external file ->jdk 아래있는 src.zip 선택
+
+http://egloos.zum.com/wharak/v/1207670 참고

@@ -1,0 +1,23 @@
+import java.util.Arrays;
+
+public class 지그재그순회 {
+	static int[][] map;
+
+	public static void main(String[] args) {
+		map = new int[3][4];
+		int index=1;
+		for (int i = 0; i < 3; ++i) {
+			for (int j = 0; j < 4; ++j) {
+				map[i][j + ((4 - 1 - (2 * j)) * (i % 2))]=index++; 
+				//행의 현재인덱스 + ((행의 끝행 인덱스 - (현재 행의 인덱스의 2배))*(현재 열의 인덱스를 2로 나눈 나머지))
+				
+				//--열이 홀수열 인덱스이면 왼쪽방향으로, 짝수열 인덱스이면 오른쪽방향으로 가게 유도(짝수열이면 0이되므로)
+				//어느정도 암기가 필요, 이해도 필요
+			}
+		}
+		for (int[] ring : map) {
+			System.out.println(Arrays.toString(ring));
+		}
+	}
+
+}

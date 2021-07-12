@@ -1,0 +1,4 @@
+https://mangkyu.tistory.com/47 
+https://yaboong.github.io/java/2018/05/26/java-memory-management/
+
+static 힙 스택 정적메모리 구동방식 헷갈린다면 위 링크 

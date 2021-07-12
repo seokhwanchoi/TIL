@@ -1,0 +1,92 @@
+boolean 배열과 class객체의 위대함..
+뭔가 껄끄러운 처리 boolean배열로 처리하면 편할때가 많고(int형 방문배열도 유용)
+백준 gaaaaaaaaaaarden문제
+
+특히 이번 턴에 들어온건지 표시해주는 것에는 클래스객체만한게 없다진짜
+
+
+직사각형 90도 오른쪽 회전 외우기(반드시 알아야함)
+```
+	static void rotate() {
+		if(tmp[0].length==c) {
+			int nxt[][]=new int[c][r];
+			for(int i=0;i<r;++i) {
+				for(int j=0;j<c;++j) {
+					nxt[j][r-1-i]=tmp[i][j];
+				}
+			}
+			tmp=new int[c][r];
+			for(int i=0;i<c;++i) {
+				for(int j=0;j<r;++j) {
+					tmp[i][j]=nxt[i][j];
+				}
+			}
+		}
+		else if(tmp[0].length==r) {
+			int nxt[][]=new int[r][c];
+			for(int i=0;i<c;++i) {
+				for(int j=0;j<r;++j) {
+					nxt[j][c-1-i]=tmp[i][j];
+				}
+			}
+			tmp=new int[r][c];
+			for(int i=0;i<r;++i) {
+				for(int j=0;j<c;++j) {
+					tmp[i][j]=nxt[i][j];
+				}
+			}
+		}
+		
+	}
+```
+
+
+
+<상 하 좌 우 디렉션 일 때 그에 맞게 2차원배열 한칸씩 보는 코드--암기>
+
+상(위부터 아래로 훑는 것. 위로 떨어뜨릴 때)
+
+cursor가 팁 -- 또 그밖에?? (ArrayList로 뭉쳐서하는 건 시간비효율)
+
+for (int i = 0; i < N; i++) {
+	for (int j = 0; j < N; j++) {
+         	 map[j][i]
+	}
+}
+      
+      
+      
+하(아래부터 위로 훑는 것. 아래로 떨어뜨릴 때)
+
+for (int i = 0; i < N; i++) {
+	for (int j = N - 1; j >= 0; j--) {
+         	 map[j][i]
+	}
+}
+
+
+      
+좌(왼쪽부터 오른쪽 훑는 것. 왼쪽으로 떨어뜨릴 때)
+
+for (int i = 0; i < N; i++) {
+	for (int j = 0; j < N; j++) {
+           	 map[i][j]
+	}
+}      
+      
+      
+      
+우(오른쪽부터 왼쪽으로 훑는 것. 오른쪽으로 떨어뜨릴 때)
+
+for (int i = 0; i < N; i++) {
+	for (int j = N - 1; j >= 0; j--) {
+          	map[i][j]
+	}
+}
+
+
+
+
+
+
+
