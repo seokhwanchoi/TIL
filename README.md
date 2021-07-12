@@ -6,7 +6,6 @@
 
 \<\>나 \[\]가 안없어지게 하려면 < , >, [ , ] 앞에 \를 붙이자
 
-
 #This is a H1
 
 >This is a first blockquote.
@@ -14,13 +13,10 @@
 1. 첫번째
 2. 두번째
 3. 세번째
-
 ----------------
-
 *빨강
 *녹색
 *파랑
 This is a normal pragaph:
-
 end code block.
 -----------------
