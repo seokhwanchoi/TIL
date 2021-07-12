@@ -21,7 +21,8 @@ This is a normal pragaph:
 end code block.
 -----------------
 
-
+<br>
+<br><br>
 
 외국계자소서 꿀팁
 
@@ -31,7 +32,7 @@ end code block.
 4번째로는 영어자소서+경력서
 5번째로는 cover letter -- 검색해보기 (없으면 거의 탈락 수준) Dear 인사담당자 
 
-
+<br><br><br>
 
 음성처리 네트워크프로토콜
 https://www.acmicpc.net/problem/2174
